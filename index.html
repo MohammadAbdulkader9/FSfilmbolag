@@ -3,30 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FS Filmbolag</title>
+    <title>FS Studios</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <header>
-      <div class="Logo">
-        <!-- <div style="display: flex; align-items: center"> -->
-        <div style="display: flex; align-items: center">
-          <a href="https://www.sfanytime.com/sv">
-            <img
-              src="https://static.feber.se/article_images/40/92/24/409224_980.jpg"
-              alt="Film Logo"
-              width="50"
-            />
-          </a>
-          <p>Filmbolag</p>
-        </div>
+      <div id="logo">
+        <a href="https://www.sfanytime.com/sv">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/f/fd/SFS_logo_primary_v_red.png"
+            alt="Film Logo"
+            width="50"
+          />
+        </a>
+        <p id="logo-text">FS Studios</p>
       </div>
     </header>
-    <h1>Kingsman: The Blue Blood</h1>
-    <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvCbSxPO5hEeIwhfSaeNEOna2mka0Z5qVwbQ&s"
-      alt="Movie image"
-    />
+    <div class="movie-title-image">
+      <h1 id="movie-title">Kingsman: The Blue Blood</h1>
+      <img
+        id="movie-image"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvCbSxPO5hEeIwhfSaeNEOna2mka0Z5qVwbQ&s"
+        alt="Movie image"
+      />
+    </div>
+
     <h2>Kingsman Serie</h2>
     <p>
       Kingsman is a British-American film franchise, consisting of action-comedy
@@ -47,6 +49,7 @@
     <hr />
     <h3>Trailer</h3>
     <iframe
+      id="movie-trailer"
       width="560"
       height="315"
       src="https://www.youtube.com/embed/AhcEkp1jAZ4?si=fS4xNX9CoPeInMjU&amp;controls=0"
@@ -62,7 +65,7 @@
     </p>
     <hr />
     <h3>About the Movie</h3>
-    <table>
+    <table class="info-table">
       <tr>
         <th>Director</th>
         <th>Writer</th>
@@ -87,9 +90,23 @@
     </p>
 
     <hr />
-    <footer>
-      <p>&copy; 2024 FS All rights reserved.</p>
-      <p>Created by Mohammad on behalf of FS</p>
+    <footer class="footer-info">
+      <table class="footer-table">
+        <tr>
+          <td>&copy; 2024 FS All rights reserved.</td>
+        </tr>
+        <tr>
+          <td>Created by Mohammad on behalf of FS</td>
+        </tr>
+      </table>
+      <table class="footer-table">
+        <tr>
+          <td>Visit us:</td>
+          <td><a href="https://www.sfanytime.com/sv">FS Studios</a></td>
+          <td><a href="https://www.facebook.com/">Facebook</a></td>
+          <td><a href="https://www.instagram.com/">Instagram</a></td>
+        </tr>
+      </table>
     </footer>
   </body>
 </html>
